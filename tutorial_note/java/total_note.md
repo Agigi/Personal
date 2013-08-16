@@ -15,7 +15,10 @@
 - 注意Ch1-3的class `Scanner`及Ch1-7的class `Console`之間的差異。
 
 ## Ch2-6
-- 注意JAVA也是有`++`跟`--`的，用法跟C語言的一模一樣！
+- 注意Java也是有`++`跟`--`的，用法跟C語言的一模一樣！
+
+## Ch2-8
+- Java的switch case一樣無法用String當case的條件。
 
 ## 結論
 - 記不起來的細節就算了(如一些API的用法)，JAVA的重要概念不要忘記比較重要！
