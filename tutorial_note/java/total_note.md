@@ -38,6 +38,13 @@
 ## Ch4-7
 - Java有foreach的語法來掃過array的所有element一次！
 
+## Ch5-1
+- Java裡面每一個的`char`變數都是用unicode字元存的！
+
+## Ch5-2
+- `String st = "abc";`還是`String str = new String("abc");`不同，前者會先去回收池找，所以有可能會refer到同一個Reference！
+- 回收池的機制即「Flyweight Pattern」！
+
 ## 結論
 - 記不起來的細節就算了(如一些API的用法)，JAVA的重要概念不要忘記比較重要！
 
