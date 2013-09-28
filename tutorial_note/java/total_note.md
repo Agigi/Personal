@@ -20,6 +20,13 @@
 ## Ch2-8
 - Java的switch case一樣無法用String當case的條件。
 
+## Ch3-1
+- `Boolean`跟`boolean`只差第一個字大小寫而已，但二者截然不同喔！
+- `Boolean`因為是Class的關係，所以它的變數值可以是`null`，這樣就變成是`Boolean`的變數可以有三種值：`true`、`false`和`null`！這個技巧可以讓你的程式更加簡化！
+
+## Ch3-2
+- 不要因為「Object跟Primitive value之間」可以用Boxing語法糖，就以為「Object跟Object」也可以用Boxing語法糖！
+
 ## 結論
 - 記不起來的細節就算了(如一些API的用法)，JAVA的重要概念不要忘記比較重要！
 
