@@ -1,5 +1,5 @@
 ## Tutorial URL
-- <http://caterpillar.onlyfun.net/Gossip/JavaGossip-V1/JavaGossip.htm>
+- <http://openhome.cc/Gossip/JavaGossip-V1/>
 
 ## Ch1-1
 - `javac`及`java`的使用。
