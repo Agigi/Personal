@@ -27,6 +27,17 @@
 ## Ch3-2
 - 不要因為「Object跟Primitive value之間」可以用Boxing語法糖，就以為「Object跟Object」也可以用Boxing語法糖！
 
+## Ch4-1
+- `Array`這個Class在Java裡有特殊地位，它的Object有所有一般Object的屬性，但是在new一個`Array`時只能用傳統的`T[] arr = new T[10];`或`int[] arr = {1,2,3};`來給值！
+- Java的`Array`在`T[] arr = new T[10];`後會自動替所有element設初始值`0`或`false`！
+
+## Ch4-3
+- 在Java裡，Object的assignment都是assign Reference。
+- Java的`Array`物件沒有Boxing支援！
+
+## Ch4-7
+- Java有foreach的語法來掃過array的所有element一次！
+
 ## 結論
 - 記不起來的細節就算了(如一些API的用法)，JAVA的重要概念不要忘記比較重要！
 
