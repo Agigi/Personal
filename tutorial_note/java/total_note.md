@@ -3,6 +3,10 @@
 
 ## Ch1-1
 - `javac`及`java`的使用。
+```script
+$ javac ./ABC.java
+$ java ABC
+```
 - 注意路徑的問題跟`package`的使用。
 
 ## Ch1-3
