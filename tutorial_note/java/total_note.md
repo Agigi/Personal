@@ -45,6 +45,11 @@
 - `String st = "abc";`還是`String str = new String("abc");`不同，前者會先去回收池找，所以有可能會refer到同一個Reference！
 - 回收池的機制即「Flyweight Pattern」！
 
+## Ch5-6
+- `StringBuilder`即mutable的字串！可以對既有字串作處理！
+- `StringBuilder`的`append()`比`String`的`+`性能上來得更好！
+- `StringBuilder`物件也有Boxing支援喔！
+
 ## 結論
 - 記不起來的細節就算了(如一些API的用法)，JAVA的重要概念不要忘記比較重要！
 
