@@ -139,6 +139,25 @@ function Highcharts3(H) {
     // Special fall back to button defaults
     delete Highcharts.getOptions().rangeSelector.buttonTheme.fill;
     delete Highcharts.getOptions().rangeSelector.buttonTheme.states;
+    
+    // Need to calculate plotHigh & plotLow for all points in all series of "candlestick"!
+    // These 2 values will be used but HighStock doesn't calculate them by default!
+    // Use the wrapper mechanism provided by HighStock to override "translate()" to calculate these 2 values!
+    H.wrap(H.seriesTypes.ohlc.prototype, 'translate', function(proceed) {
+        proceed.apply(this, Array.prototype.slice.call(arguments, 1)); //super()!
+        var series = this;
+        var yAxis = series.yAxis;
+        if (series.points && series.points instanceof Array) {
+            series.points.forEach(function(point) {
+                if (point.high !== null) {
+                    point.plotHigh = yAxis.translate(point.high, 0, 1, 0, 1);
+                }
+                if (point.low !== null) {
+                    point.plotLow = yAxis.translate(point.low, 0, 1, 0, 1);
+                }
+            });
+        }
+    });
 };
 
 // Call it
