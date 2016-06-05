@@ -158,6 +158,15 @@ function Highcharts3(H) {
             });
         }
     });
+    
+    H.setOptions({
+        global: {
+            useUTC: false
+        },
+        lang: {
+            thousandsSep: ''
+        }
+    });
 };
 
 // Call it
